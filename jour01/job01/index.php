@@ -15,13 +15,13 @@
     echo"$str2 $str $str3";
     ?>
     <?php
-$val="6";
+$val=6;
 echo"$val";
 $val="$val"+"4";
 echo"$val";
-$myBool="true";
+$myBool=true;
 echo"$myBool";
-$myBool="false";
+$myBool=false;
 echo"$myBool";
     ?>
 </body>
