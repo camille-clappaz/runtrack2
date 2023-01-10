@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php
-$largeur=width:20px;
-$hauteur=height:10px;
-echo" <div style="width:20px ;height:10px;border:1px solid black;">";
+$largeur="width:20px";
+$hauteur="height:10px";
+echo"<div style='$largeur ;$hauteur;border:1px solid black;'>";
     ?>
-    <div style="width:20px ;height:10px ;border:1px solid black;">
+    <!-- <div style="width:20px ;height:10px ;border:1px solid black;"> -->
 </body>
 </html>
