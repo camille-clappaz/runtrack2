@@ -16,7 +16,8 @@ while($i<=100){
     elseif($i<=20){
         echo '<i>'.$i. '</i>'.'</br>';
     }
-    elseif($i==42){
+    elseif($i==42){ /* si je le mets en dessous ca ne 
+        fonctionne pas a cause des priorités */
         echo"<p>La Plateforme_</p>".'</br>';
     }
     elseif ($i>=25 && $i<=50) {
