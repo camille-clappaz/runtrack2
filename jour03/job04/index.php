@@ -9,11 +9,10 @@
 <body>
    <?php
    $str="Dans l'espace, personne ne vous entend crier";
-   $compte=0
-   for($i=0; isset($str[$i])==true; $i++){
-    $compte++;
-   }
-   echo "$compte caractères";
+  
+   for($i=0; isset($str[$i])==true; $i++){}
+   echo $i;
+   
    ?>
 </body>
 </html>
