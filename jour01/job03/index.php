@@ -27,7 +27,7 @@ var_dump($float);
            <tr>
             <td>Chaîne de caractère</td>
             <td>str</td>
-            <td><?=$str;?></td>
+            <td><?= $str;?></td>
            </tr>
            <tr><td>nombre entier</td>
            <td>integer</td>
