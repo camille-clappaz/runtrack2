@@ -10,19 +10,23 @@
    <?php
    $str="On n’est pas le meilleur quand on le croit mais quand on le sait";
    $dic=[
-    ['voyelles'=>'a',eiouyO']
+   $voyelles=['a','e','i','o','u','y','O'],
+   $consonnes=['b','c','d';'f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z']
    ];
-   $voyelles=0;
-   $consonnes=0;
-   for($i=0; isset($str[$i])==true; i++){
-foreach($dic as $voyelles){
-    if($str[$i]==$dic[$voyelles])
+   $countvoyelles=0;
+   $countconsonnes=0;
+   
+   for($i=0; isset($str[$i])==true; $i++){
+    for($j=0; isset($voyelles[$j])==true; $j++){
+    if($str[$i]==$voyelles[$j])
     {
+        $countvoyelles++;
     }
-    $voyelles=$i;
 }
-   }
+}
+
    ?>
+
    <table>
     <thead>
         <tr>
@@ -32,8 +36,8 @@ foreach($dic as $voyelles){
     </thead>
     <tbody>
         <tr>
-            <td><?=$consonnes?></td>
-            <td><?=$voyelles?></td>
+            <td><?=$countconsonnes?></td>
+            <td><?=$countvoyelles?></td>
         </tr>
     </tbody>
    </table>

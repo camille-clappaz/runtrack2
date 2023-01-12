@@ -14,23 +14,27 @@
     <input type="text" name="mail">
     <input type="submit" >
     </form>
+    <table>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Valeur</th>
+        </tr>
+    </thead>
+    <tbody>
+
 
     <?php
-   
+   foreach($_GET as $key=>$value){
+    echo "
+        <tr>
+        <td>$key</td>
+        <td>$value</td>
+    </tr>"
+       ;
+   }
     ?>
-    <table>
-        <thead>
-            <tr>
-                <th>Argument</th>
-                <th>Valeur</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
+    </tbody>
+</table>
 </body>
 </html>
