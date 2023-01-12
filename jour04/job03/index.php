@@ -7,7 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
+       
+<form action="" method="POST">
+<input type="text" name="username">
+<input type="text" name="password">
+<input type="text" name="mail">
+<input type="submit" >
+</form>
+<?php
+$i=0;
+foreach($_POST as $key=>$value){
+    if($value != "")
+    {$i++;}
+    } 
+echo"Le nombre d'arguments GET envoyé est $i";
 
     ?>
 </body>
