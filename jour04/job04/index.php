@@ -7,8 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
+    
+    <form action="" method="post">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="text" name="mail">
+    <input type="submit" >
+    </form>
+    <table>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Valeur</th>
+        </tr>
+    </thead>
+    <tbody>
 
+
+    <?php
+   foreach($_POST as $key=>$value){
+    echo "
+        <tr>
+        <td>$key</td>
+        <td>$value</td>
+    </tr>"
+       ;
+   }
     ?>
+    </tbody>
+</table>
 </body>
 </html>
