@@ -15,7 +15,11 @@
     </form>
     <?php
     foreach($_GET as $key=>$value){
- if($value%2==0){
+ if($value==""){
+    echo "";
+ }
+ 
+ elseif($value%2==0){
     echo "Nombre pair";    
  }
  else{
