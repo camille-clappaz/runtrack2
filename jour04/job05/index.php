@@ -14,16 +14,25 @@
     </form>
     <?php
 
-$comm=""
-foreach($_GET as $key=>$value){
-    if($key=="John" && $value=="Rambo"){
-       $comm="C'est pas ma guerre"
+
+foreach($_POST as $key=>$value){
+    if($_POST["username"]="John" && $_POST["password"]=="Rambo"){
+       echo "C'est pas ma guerre";
+       break;
+    }
+    elseif($value != ""){
+       echo "Votre pire cauchemar";
+       break;
     }
      else{
-        $comm="Votre pire cauchemar";
+        echo "";
     }
+
 }
-echo $comm;
+// echo $comm;  
+// echo "";
+
+
     ?>
 </body>
 </html>
