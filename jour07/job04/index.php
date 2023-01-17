@@ -11,7 +11,7 @@
     $operation="";
 function calcule($a, $operation, $b){
     if($operation=="+"){
-    return($a + $b);}
+    return ($a + $b) ;}
     elseif($operation=="-"){
     return($a - $b);
     }
@@ -25,7 +25,7 @@ function calcule($a, $operation, $b){
 
     
 
-$calcule=calcule(9,"/",8);
+$calcule=calcule(9,"+",8);
 echo $calcule;
 
 

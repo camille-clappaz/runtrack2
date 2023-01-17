@@ -8,7 +8,14 @@
 </head>
 <body>
     <?php
-
+function leetSpeak($str){
+    for($i=0; isset($str[$i])==true; $i++){
+    if($str[$i]== "A" || $str[$i]== "a"){
+        return $str[$i]=4;
+    }}
+}
+$leet=leetSpeak("charade");
+echo $leet;
     ?>
 </body>
 </html>

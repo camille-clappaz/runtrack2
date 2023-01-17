@@ -8,6 +8,17 @@
 </head>
 <body>
     <?php
+    
+function occurences($str,$char){
+    $occ=0;
+    for($i=0; isset($str[$i]); $i++){
+        if($char==$str[$i]){
+            $occ++;
+        }
+    }
+    return ($occ);
+}
+echo occurences("chat","l");
 
     ?>
 </body>
