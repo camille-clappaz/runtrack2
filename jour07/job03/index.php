@@ -8,7 +8,11 @@
 </head>
 <body>
     <?php
-
+function getHello(){
+    return "Hello LaPlateforme";
+}
+$var=getHello();
+echo $var;
     ?>
 </body>
 </html>

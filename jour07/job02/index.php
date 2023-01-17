@@ -8,7 +8,15 @@
 </head>
 <body>
     <?php
-
+function bonjour($jour){
+    if($jour == true){
+        echo "Bonjour";
+    }
+    else{
+        echo "Bonsoir";
+    }
+}
+bonjour(8);
     ?>
 </body>
 </html>
