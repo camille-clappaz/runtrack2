@@ -10,12 +10,12 @@
     <?php
     $operation="";
 function calcule($a, $operation, $b){
-    if($operation="+"){
+    if($operation=="+"){
     return($a + $b);}
-    elseif($operation="-"){
+    elseif($operation=="-"){
     return($a - $b);
     }
-    elseif ($operation="*") {
+    elseif ($operation=="*") {
     return($a * $b);
     }
     else {
@@ -25,8 +25,9 @@ function calcule($a, $operation, $b){
 
     
 
-$calcule=calcule(9,"-",8);
+$calcule=calcule(9,"/",8);
 echo $calcule;
+
 
     ?>
 </body>
