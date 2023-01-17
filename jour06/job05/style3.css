@@ -1,0 +1,17 @@
+.formulaire{
+    background-color: blueviolet; 
+    border: 4px solid blue;
+}
+select{
+    background-color: orange;
+
+
+}
+option{
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+button{
+    background-color: yellow;
+
+}

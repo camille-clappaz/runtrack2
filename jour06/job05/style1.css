@@ -1,0 +1,14 @@
+select{
+    display: inline;
+    background-color: aqua;
+
+
+}
+option{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    background-color: blue;
+    border-radius: 10px;
+}

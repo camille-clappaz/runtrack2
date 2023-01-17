@@ -19,7 +19,7 @@ $largeur= $_GET["largeur"];
 for($i=0; $i<$hauteur;$i++){
     // for($z=0; $z<$largeur; $z++){
     //     echo "";
-    // }
+    // } 
     for($k=0; $k<=$i; $k++){
         echo "*";
         
