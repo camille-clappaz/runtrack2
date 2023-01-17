@@ -16,7 +16,7 @@ function bonjour($jour){
         echo "Bonsoir";
     }
 }
-bonjour(8);
+bonjour(1);
     ?>
 </body>
 </html>

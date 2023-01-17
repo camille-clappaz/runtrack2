@@ -8,6 +8,25 @@
 </head>
 <body>
     <?php
+    $operation="";
+function calcule($a, $operation, $b){
+    if($operation="+"){
+    return($a + $b);}
+    elseif($operation="-"){
+    return($a - $b);
+    }
+    elseif ($operation="*") {
+    return($a * $b);
+    }
+    else {
+    return($a / $b);}}
+//     return($a.$operation.$b);
+// }
+
+    
+
+$calcule=calcule(9,"-",8);
+echo $calcule;
 
     ?>
 </body>
