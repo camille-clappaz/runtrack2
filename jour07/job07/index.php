@@ -7,7 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="">
+        <input type="text" name="str">
+        <select name="fonction" id="">
+           <option value="gras">gras</option>
+        <option value="cesar">cesar</option>
+        <option value="plateforme">******me_</option>
+        
+    </select><br>
+        <button type="submit">Change cette phrase</button>
+    </form>
     <?php
+function gras($str){
+    if($value="gras"){
+        return '<b>'.$str.'</b>';
+    }
+}
+echo gras($_GET["str"]);
+
+
 
     ?>
 </body>
