@@ -16,6 +16,8 @@
     $_SESSION["nbvisistes"]=0;
     else
     $_SESSION["nbvisistes"]=$_SESSION["nbvisistes"]+1;
+    if(isset($_POST["reset"]))
+    $_SESSION["nbvisistes"]=0;
     echo  $_SESSION["nbvisistes"];
   
 
