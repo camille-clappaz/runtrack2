@@ -41,5 +41,16 @@ $result=$request->fetch_all(MYSQLI_ASSOC);
     </tbody>
 </table>  
 
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    td, th{
+        padding: 10px;
+        border: 2px solid black;
+        
+    }
+</style>
+
 </body>
 </html>
