@@ -4,7 +4,7 @@ if( $mysqli->connect_error ) {
     echo "erreur de connexion a MySQL:" .$mysqli -> connect_error;
     exit();
 }
-$request=$mysqli->query("SELECT salles.nom, salles.capacite FROM salles");
+$request=$mysqli->query("SELECT * FROM salles ORDER BY `capacite` DESC");
 $result=$request->fetch_all(MYSQLI_ASSOC);
 // var_dump($result);
 ?>
@@ -31,16 +31,16 @@ $result=$request->fetch_all(MYSQLI_ASSOC);
     <tbody>
         <?php for($i=0; $i < sizeof($result); $i++):?>
        <tr >
+       <td><?=$result[$i]["id"]?></td>
        <td><?=$result[$i]["nom"]?></td>
-       <td><?=$result[$i]["capacite"]?>
+       <td><?=$result[$i]["id_etage"]?></td>
+       <td><?=$result[$i]["capacite"]?></td>
        
-       </td>
       
        </tr>
        <?php endfor; ?>
     </tbody>
 </table>  
-
 <style>
     table{
         border-collapse: collapse;

@@ -4,7 +4,7 @@ if( $mysqli->connect_error ) {
     echo "erreur de connexion a MySQL:" .$mysqli -> connect_error;
     exit();
 }
-$request=$mysqli->query("SELECT salles.nom, salles.capacite FROM salles");
+$request=$mysqli->query("SELECT SUM(capacite) AS capacite_totale FROM salles ");
 $result=$request->fetch_all(MYSQLI_ASSOC);
 // var_dump($result);
 ?>
@@ -31,8 +31,8 @@ $result=$request->fetch_all(MYSQLI_ASSOC);
     <tbody>
         <?php for($i=0; $i < sizeof($result); $i++):?>
        <tr >
-       <td><?=$result[$i]["nom"]?></td>
-       <td><?=$result[$i]["capacite"]?>
+       <td><?=$result[$i]["capacite_totale"]?>
+       
        
        </td>
       
@@ -40,7 +40,6 @@ $result=$request->fetch_all(MYSQLI_ASSOC);
        <?php endfor; ?>
     </tbody>
 </table>  
-
 <style>
     table{
         border-collapse: collapse;
