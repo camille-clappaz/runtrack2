@@ -4,9 +4,9 @@ if( $mysqli->connect_error ) {
     echo "erreur de connexion a MySQL:" .$mysqli -> connect_error;
     exit();
 }
-$request=$mysqli->query("SELECT SUM(superficie) AS superficie_totale
-FROM etage
--- WHERE facture_id = 1");
+$request=$mysqli->query("SELECT count(*) AS nb_etudiants
+FROM etudiants
+");
 $result=$request->fetch_all(MYSQLI_ASSOC);
 // var_dump($result);
 ?>
@@ -33,7 +33,7 @@ $result=$request->fetch_all(MYSQLI_ASSOC);
     <tbody>
         <?php for($i=0; $i < sizeof($result); $i++):?>
        <tr >
-       <td><?=$result[$i]["superficie_totale"]?>
+       <td><?=$result[$i]["nb_etudiants"]?>
      
        </td>
       
